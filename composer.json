@@ -4,12 +4,12 @@
 	"keywords": ["teewebapp", "front"],
 	"license": "MIT",
 	"require": {
-		"teewebapp/system": "dev-master"
+		"teewebapp/system": "dev-master@dev"
 	},
 	"autoload": {
 		"classmap": [
 			"."
 		]
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "stable"
 }
