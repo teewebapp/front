@@ -5,6 +5,7 @@ namespace Tee\Front;
 use Tee\Front\Widgets\MainMenu;
 
 use App;
+use Tee\System\Widget;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 
