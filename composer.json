@@ -4,7 +4,8 @@
 	"keywords": ["teewebapp", "front"],
 	"license": "MIT",
 	"require": {
-		"teewebapp/system": "dev-master@dev"
+		"teewebapp/system": "dev-master@dev",
+		"teewebapp/page": "dev-master@dev"
 	},
 	"autoload": {
 		"classmap": [
