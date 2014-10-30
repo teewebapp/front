@@ -11,7 +11,7 @@ class MainMenu {
     public $menuName = 'mainMenu';
     public function register(array $options=array())
     {
-        $category = PageCategory::where('type', '=', PageCategory::FIXED)->first();
+        $category = PageCategory::where('type', '=', PageCategory::PAGE)->first();
         if(moduleEnabled('i18n'))
         {
             $pages = $category->pages()->where(function($query) {

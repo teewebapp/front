@@ -9,7 +9,10 @@
 	},
 	"autoload": {
 		"classmap": [
-			"."
+			"controllers",
+			"tests",
+			"widgets",
+			"ServiceProvider.php"
 		]
 	},
 	"minimum-stability": "stable"
