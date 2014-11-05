@@ -8,12 +8,9 @@
 		"teewebapp/page": "dev-master@dev"
 	},
 	"autoload": {
-		"classmap": [
-			"controllers",
-			"tests",
-			"widgets",
-			"ServiceProvider.php"
-		]
+		"psr-4": {
+			"Tee\\Front": "."
+		}
 	},
 	"minimum-stability": "stable"
 }
