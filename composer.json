@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"require": {
 		"teewebapp/system": "dev-master@dev",
-		"teewebapp/page": "dev-master@dev"
+		"teewebapp/page": "dev-master@dev",
+		"barryvdh/laravel-debugbar": "1.*",
+		"panique/laravel-sass": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
