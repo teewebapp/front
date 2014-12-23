@@ -18,11 +18,12 @@ class MainMenu {
                 $query->where('language', '=', Config::get('app.locale'))
                     ->orWhere('language', '=', '')
                     ->orWhereNull('language');
+                $query->where('visibility', '=', Page::VISIBLE);
             })->get();
         }
         else
         {
-            $pages = $category->pages;
+            $pages = $category->pages()->where('visibility', '=', Page::VISIBLE)->get();
         }
         Menu::make($this->menuName, function($menu) use($pages) {
             $menu->add(trans('front::front.home'), route('home'));
