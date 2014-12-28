@@ -4,8 +4,8 @@
 	"keywords": ["teewebapp", "front"],
 	"license": "MIT",
 	"require": {
-		"teewebapp/system": "dev-master@dev",
-		"teewebapp/page": "dev-master@dev",
+		"teewebapp/system": "1.*",
+		"teewebapp/page": "1.*",
 		"barryvdh/laravel-debugbar": "1.*",
 		"panique/laravel-sass": "dev-master"
 	},
