@@ -6,6 +6,7 @@ use View, Config;
 use Tee\Page\Models\Page;
 use Tee\Page\Models\PageCategory;
 use Tee\System\Menu;
+use Event;
 
 class MainMenu {
     public $menuName = 'mainMenu';
@@ -26,7 +27,11 @@ class MainMenu {
             $pages = $category->pages()->where('visibility', '=', Page::VISIBLE)->get();
         }
         Menu::make($this->menuName, function($menu) use($pages) {
+
             $menu->add(trans('front::front.home'), route('home'));
+
+            Event::fire('front::menu.load', array($menu));
+
             foreach($pages as $page) {
                 $options = array();
                 if($page->type == Page::LINKED)
