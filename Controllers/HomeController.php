@@ -10,6 +10,6 @@ class HomeController extends BaseController {
 	{
         // esta visualização está no tema,
         // por isso não usamos escopo com front::
-        return View::make('home.index');
+        return View::make('home.index', ['breadcrumbVisible'=>false]);
 	}
 }

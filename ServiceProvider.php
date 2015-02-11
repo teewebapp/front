@@ -6,6 +6,7 @@ use Tee\Front\Widgets\MainMenu;
 
 use App, Config, SassCompiler;
 use Tee\System\Widget;
+use Tee\System\Asset;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 
