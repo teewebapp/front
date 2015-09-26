@@ -9,4 +9,9 @@
             {{ Input::get($messageType) }}
         </div>
     @endif
+    @if(isset($$messageType))
+        <div class="alert alert-{{{$messageClass}}}">
+            {{ $$messageType }}
+        </div>
+    @endif
 @endforeach
